@@ -1,0 +1,635 @@
+<?php
+/* Template Name:  Location Template */
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/fonts/knockout/stylesheet.css" />
+	<?php wp_head(); ?>
+</head>
+
+<body>
+
+<div class="lma_wrapper">
+	
+	
+<div class="lma_intro lma_section">
+	
+	<h1 class="intro_header fade-in one">How Do You Measure Up?</h1>
+	
+	<div class="intro_pins_wrapper">
+		
+		
+		<div class="intro_single_wrapper intro_single_wrapper1 fade-in one">
+		
+		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/intro-get-found.png"/>
+		
+		<div class="intro_stars">
+			<img src="<?php bloginfo('template_directory');?>/images/stars.png">
+			<img src="<?php bloginfo('template_directory');?>/images/stars.png">
+			<img src="<?php bloginfo('template_directory');?>/images/stars.png">
+			<img src="<?php bloginfo('template_directory');?>/images/stars.png">
+			<img src="<?php bloginfo('template_directory');?>/images/grey-stars.png">
+		</div><!-- intro stars -->
+		
+		</div><!-- intro_single_wrapper -->
+		
+		<div class="intro_single_wrapper intro_single_wrapper2 fade-in two">
+		
+		<img class="single_pin single_pin2" src="<?php bloginfo('template_directory');?>/images/intro-get-social.png"/>
+		
+		<div class="intro_stars">
+			<img src="<?php bloginfo('template_directory');?>/images/blue-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/blue-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/blue-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/blue-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/grey-stars.png">
+		</div><!-- intro stars -->
+		
+		</div><!-- intro_single_wrapper -->
+		
+		<div class="intro_single_wrapper intro_single_wrapper3 fade-in three">
+		
+		<img class="single_pin single_pin3" src="<?php bloginfo('template_directory');?>/images/intro-get-reviews.png"/>
+		
+		<div class="intro_stars">
+			<img src="<?php bloginfo('template_directory');?>/images/orange-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/orange-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/orange-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/orange-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/grey-stars.png">
+		</div><!-- intro stars -->
+		
+		</div><!-- intro_single_wrapper -->
+		
+		<div class="intro_single_wrapper intro_single_wrapper4 fade-in four">
+		
+		<img class="single_pin single_pin4" src="<?php bloginfo('template_directory');?>/images/intro-get-customers.png"/>
+		
+		<div class="intro_stars">
+			<img src="<?php bloginfo('template_directory');?>/images/red-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/red-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/red-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/red-star.png">
+			<img src="<?php bloginfo('template_directory');?>/images/grey-stars.png">
+		</div><!-- intro stars -->
+		
+		</div><!-- intro_single_wrapper -->
+		
+	</div><!-- intro_pins_wrapper -->
+	
+</div><!-- intro -->
+
+<div class="get_found lma_section lma_section1">
+
+
+
+<div class="review_stars_wrapper">
+	<span class="close green">Close X</span>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/map.png"/>
+	<div class="review_stars">
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/stars.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/stars.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/stars.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/stars.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/grey-stars.png"/>
+	</div><!-- review_stars -->
+</div><!-- review_stars --> 
+<div class="report_wrapper">
+	
+	<h1 class="report_header green">Get Found</h1>
+	<div class="social_icons">
+		
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+	
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+	
+	
+	
+	
+	</div><!-- social_icons -->
+	
+	
+	<div id="accordion" class="green_accordian accordian">
+  <h2 class="green accordian_header">Observations</h2>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h2 class="green accordian_header">Recommendations</h2>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h2 class="green accordian_header">Sources</h2>
+  <div>
+    <p>
+    <a href="">Nam enim risus</a>, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  
+</div><!-- accordion -->
+	
+	
+	
+	
+	
+</div><!-- report_wrapper -->
+
+
+
+</div><!-- get_found -->
+
+
+
+
+
+<div class="get_social lma_section lma_section2">
+
+
+
+<div class="review_stars_wrapper">
+	<span class="close blue">Close X</span>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/get-social.png"/>
+	<div class="review_stars">
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/grey-stars.png"/>
+	</div><!-- review_stars -->
+</div><!-- review_stars --> 
+<div class="report_wrapper">
+	
+	<h1 class="report_header blue">Get Social</h1>
+	<div class="social_icons">
+		
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+	
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/blue-icon.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+	
+	
+	
+	
+	</div><!-- social_icons -->
+	
+	
+	<div id="accordion2" class="blue_accordian accordian">
+  <h2 class="blue accordian_header">Observations</h2>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h2 class="blue accordian_header">Recommendations</h2>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h2 class="blue accordian_header">Sources</h2>
+  <div>
+    <p>
+    <a href="">Nam enim risus</a>, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  
+</div><!-- accordion -->
+	
+	
+	
+	
+	
+</div><!-- report_wrapper -->
+
+
+
+</div><!-- get_social -->
+
+
+
+
+
+
+
+
+<div class="get_reviews lma_section lma_section3">
+
+
+
+<div class="review_stars_wrapper">
+	<span class="close orange">Close X</span>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/get-reviews.png"/>
+	<div class="review_stars">
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/orange-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/orange-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/orange-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/orange-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/grey-stars.png"/>
+	</div><!-- review_stars -->
+</div><!-- review_stars --> 
+<div class="report_wrapper">
+	
+	<h1 class="report_header orange">Get Reviews</h1>
+	<div class="social_icons">
+		
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/google-orange.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/google-orange.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/google-orange.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+	
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/google-orange.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/google-orange.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+
+		<div class="social_icon_single">
+			<img src="<?php bloginfo( 'template_directory' ); ?>/images/google-orange.png"/><span>0 Reviews</span>
+		</div><!-- social_icon_single -->
+	
+	
+	
+	
+	</div><!-- social_icons -->
+	
+	
+	<div id="accordion3" class="orange_accordian accordian">
+  <h2 class="orange accordian_header">Observations</h2>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h2 class="orange accordian_header">Recommendations</h2>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h2 class="orange accordian_header">Sources</h2>
+  <div>
+    <p>
+    <a href="">Nam enim risus</a>, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  
+</div><!-- accordion -->
+	
+	
+	
+	
+	
+</div><!-- report_wrapper -->
+
+
+
+</div><!-- get_reviews -->
+
+
+
+
+<div class="get_customers lma_section lma_section4">
+
+
+
+<div class="review_stars_wrapper">
+	<span class="close red">Close X</span>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/get-customers.png"/>
+	<div class="review_stars">
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/red-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/red-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/red-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/red-star.png"/>
+		<img src="<?php bloginfo( 'template_directory' ); ?>/images/grey-stars.png"/>
+	</div><!-- review_stars -->
+</div><!-- review_stars --> 
+<div class="report_wrapper">
+	
+	<h1 class="report_header red">Get Customers</h1>
+
+	
+	
+	<div id="accordion4" class="red_accordian accordian">
+  <h2 class="red accordian_header">Observations</h2>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h2 class="red accordian_header">Recommendations</h2>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h2 class="red accordian_header">Sources</h2>
+  <div>
+    <p>
+    <a href="">Nam enim risus</a>, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  
+</div><!-- accordion -->
+	
+	
+	
+	
+	
+</div><!-- report_wrapper -->
+
+
+
+</div><!-- get_customers -->
+
+
+
+
+
+
+
+<div class="get_stared lma_section lma_section5">
+
+<span class="close purple">Close X</span>
+
+get started
+
+	
+	
+		
+	
+	
+	
+</div><!-- report_wrapper -->
+
+
+
+</div><!-- get_started -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- lma wrapper -->
+
+
+<div class="mytabs">
+	
+	<ul class="mytabs_list">
+		<li class="green_bg get_found_tab lma_tab fade-in one"><img src="<?php bloginfo('template_directory');?>/images/v-get-found.png"/></li>
+		<li class="blue_bg get_social_tab lma_tab fade-in two"><img src="<?php bloginfo('template_directory');?>/images/v-get-social.png"/></li>
+		<li class="orange_bg get_reviews_tab lma_tab fade-in three"><img src="<?php bloginfo('template_directory');?>/images/v-get-reviews.png"/></li>
+		<li class="red_bg get_customers_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/v-get-customers.png"/></li>
+		<li class="purple_bg get_started_tab lma_tab fade-in five"><img src="<?php bloginfo('template_directory');?>/images/v-get-started.png"/></li>
+	</ul>
+
+</div><!-- tabs -->
+
+<?php wp_footer(); ?>
+
+<script src="<?php bloginfo('template_directory');?>/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript">
+
+
+jQuery(document).ready(function(){
+	
+
+
+	
+jQuery('.lma_tab').click(function() {
+	
+	jQuery(this).addClass('lma_active');
+	jQuery('.lma_active').not(this).removeClass('lma_active');
+	jQuery("html, body").animate({scrollTop: 0});
+
+	
+});
+
+jQuery('.intro_single_wrapper1').click(function() {
+	
+	jQuery('.get_found_tab').addClass('lma_active');
+	
+});
+
+jQuery('.intro_single_wrapper2').click(function() {
+	
+	jQuery('.get_social_tab').addClass('lma_active');
+	
+});
+
+jQuery('.intro_single_wrapper3').click(function() {
+	
+	jQuery('.get_reviews_tab').addClass('lma_active');
+	
+});
+
+jQuery('.intro_single_wrapper4').click(function() {
+	
+	jQuery('.get_customers_tab').addClass('lma_active');
+	
+});
+
+
+
+jQuery('.get_found_tab, .intro_single_wrapper1').click(function() {
+	
+	jQuery('.lma_section1').show(300);
+	jQuery('.lma_intro, .lma_section2, .lma_section3, .lma_section4, .lma_section5').hide(300);
+
+});
+
+
+jQuery('.get_social_tab, .intro_single_wrapper2').click(function() {
+	
+	jQuery('.lma_section2').show(300);
+	jQuery('.lma_intro, .lma_section1, .lma_section3, .lma_section4, .lma_section5').hide(300);
+	
+});
+
+jQuery('.get_reviews_tab, .intro_single_wrapper3').click(function() {
+	
+	jQuery('.lma_section3').show(300);
+	jQuery('.lma_intro, .lma_section1, .lma_section2, .lma_section4, .lma_section5').hide(300);
+	
+});
+
+
+jQuery('.get_customers_tab, .intro_single_wrapper4').click(function() {
+	
+	jQuery('.lma_section4').show(300);
+	jQuery('.lma_intro, .lma_section1, .lma_section2, .lma_section3, .lma_section5').hide(300);
+	
+});
+
+jQuery('.get_started_tab').click(function() {
+	
+	jQuery('.lma_section5').show(300);
+	jQuery('.lma_intro, .lma_section1, .lma_section2, .lma_section3, .lma_section4').hide(300);
+	
+});
+
+
+	
+			
+		
+
+
+jQuery('.close').click(function() {
+	
+	jQuery('.lma_intro').show(300);
+	jQuery('.lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section5').hide(300);
+	
+	jQuery('.lma_tab').removeClass('lma_active');
+
+	
+});
+	
+	
+jQuery( "#accordion, #accordion2,#accordion3, #accordion4" ).accordion({
+	heightStyle: "content",
+	collapsible :true,
+	animate: 200
+});
+
+
+});
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

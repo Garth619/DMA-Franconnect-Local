@@ -1,0 +1,435 @@
+/*
+Theme Name: Local Reports
+Author: Garrett Cullen
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a, h2 {
+  outline: none; }
+
+a img, h2 {
+  border: none; }
+
+.green {
+  color: #74ad12; }
+
+.orange {
+  color: #fa990f; }
+
+.blue {
+  color: #21a7ac; }
+
+.red {
+  color: #ee163a; }
+
+.purple {
+  color: #5b269c; }
+
+.mytabs_list {
+  cursor: pointer; }
+
+.mytabs_list .green_bg.lma_active, .mytabs_list .green_bg:hover {
+  background: #74ad12; }
+
+.mytabs_list .blue_bg.lma_active, .mytabs_list .blue_bg:hover {
+  background: #21a7ac; }
+
+.mytabs_list .orange_bg.lma_active, .mytabs_list .orange_bg:hover {
+  background: #fa990f; }
+
+.mytabs_list .red_bg.lma_active, .mytabs_list .red_bg:hover {
+  background: #ee163a; }
+
+.mytabs_list .purple_bg.lma_active, .mytabs_list .purple_bg:hover {
+  background: #5b269c; }
+
+.green_accordian a {
+  color: #74ad12;
+  text-decoration: none; }
+.green_accordian a:hover {
+  text-decoration: underline; }
+
+.blue_accordian a {
+  color: #21a7ac;
+  text-decoration: none; }
+.blue_accordian a:hover {
+  text-decoration: underline; }
+
+.orange_accordian a {
+  color: #fa990f;
+  text-decoration: none; }
+.orange_accordian a:hover {
+  text-decoration: underline; }
+
+.red_accordian a {
+  color: #ee163a;
+  text-decoration: none; }
+.red_accordian a:hover {
+  text-decoration: underline; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+  
+  
+
+
+body {
+  line-height: 1;
+  font-family: arial; }
+
+p {
+  line-height: 1.1;
+  font-size: 17px;
+  margin-bottom: 10px; }
+
+ul {
+  margin: 0 0 0 23px; }
+  
+  li {
+	  margin-bottom:9px;
+  }
+
+.wrapper {
+  width: 100%;
+  padding: 25px; }
+
+.header {
+  width: 100%;
+  margin-bottom: 9px;
+  text-align: center;
+  padding-right:2%;
+  font-family: "knockout_htf28-juniorfeatheRg",sans-serif;
+  }
+  
+  .header span {
+	  text-transform: uppercase;
+	  font-size: 41px;
+  }
+
+.main {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px 0px #6e6e6e;
+  -moz-box-shadow: 0px 0px 5px 0px #6e6e6e;
+  box-shadow: 0px 0px 5px 0px #6e6e6e;
+  overflow: hidden;
+  min-width: 650px;
+  min-height: 558px; }
+
+ul.tabs {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; }
+  ul.tabs li {
+    display: inline-block;
+    margin: 0 5px; }
+    ul.tabs li a {
+      width: 9px;
+      height: 9px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: #000;
+      display: inline-block; }
+    ul.tabs li a:hover, ul.tabs li a.active {
+      background: #fff;
+      border: 2px solid #000; }
+
+.footer {
+  width: 100%;
+  height: 200px;
+  /* temp */
+  overflow: hidden;
+  margin: 0px 0 15px;
+  text-align: center;
+  /*
+  	.footer_col {
+  		float:left;
+  	}
+  */
+  /*
+  	.footer_col_1, .footer_col_3 {
+  		width:20%;
+  	}
+  */
+  /*
+  	.footer_col_2 {
+  		width:60%;
+  		text-align: center;
+  	}
+  */ }
+  .footer .footer_col_1 {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    left: -19px; }
+  .footer img {
+    margin: 0 10px;
+    max-height: 55px; }
+
+.power_point_slide {
+  display: block;
+  height: auto;
+  margin: 25px auto 0;
+  max-height: 100%; }
+
+/* LMA */
+.lma_wrapper {
+  float: left;
+  width: 97%;
+  padding: 30px 0 0 49px; }
+
+.lma_section {
+  overflow: hidden; }
+
+.lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section5 {
+  display: none; }
+
+.lma_intro {
+  text-align: center;
+  padding: 60px 3% 0 0; }
+
+h1.intro_header {
+  font-family: "knockout_htf28-juniorfeatheRg",sans-serif;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 54px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 25px; }
+
+.intro_pins_wrapper {
+  padding: 0 4% 0 0;
+  margin-top: 87px; }
+
+.intro_single_wrapper {
+  display: inline-block;
+  margin: 0 30px; }
+
+img.single_pin {
+  position: relative;
+  top: 0;
+  transition: all .2s ease;
+  cursor: pointer;
+  width:125px; }
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes myfadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes myfadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes myfadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: myfadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: myfadeIn ease-in 1;
+  animation: myfadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.fade-in.one {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.fade-in.two {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.fade-in.three {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+.fade-in.four {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+.fade-in.five {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
+
+/*
+img.single_pin {
+	top:-6px;
+	transition:all .2s ease
+}
+*/
+img.single_pin:hover {
+  top: 6px;
+  transition: all 0.2s ease; }
+
+.intro_stars {
+  margin-top: 20px;
+  padding-bottom: 10px; }
+  .intro_stars img {
+    width: 30px;
+    position: relative;
+    top: 0;
+    transition: all .2s ease;
+    cursor: pointer; }
+  .intro_stars img:hover {
+    transition: all .2s ease;
+    top: 6px; }
+
+.review_stars {
+  padding-bottom: 10px; }
+  .review_stars img {
+    position: relative;
+    top: 0px;
+    transition: all .2s ease;
+    width:50px; }
+  .review_stars img:hover {
+    top: 6px; }
+
+.review_stars_wrapper, .report_wrapper {
+  float: left; }
+
+.review_stars_wrapper {
+  width: 34%;
+  margin-top: 30px;
+  text-align: center; }
+  .review_stars_wrapper .review_stars {
+    display: inline-block;
+    margin-top: 10px; }
+    
+    
+  .review_map {
+	  
+  }
+
+.close {
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-bottom: 25px; }
+
+.report_wrapper {
+  width: 66%;
+  padding: 40px 80px 20px 60px; }
+
+.mytabs {
+  width: 3%;
+  float: left; }
+
+ul.mytabs_list {
+  list-style: none;
+  margin: 5px 0 0;
+  dislay: none; }
+  ul.mytabs_list li {
+    color: #fff;
+    padding: 10px 0px;
+    background: #6e7070;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px; }
+    ul.mytabs_list li img {
+      width: 9px;
+      display: block;
+      margin: 0 auto; }
+
+h1.report_header {
+  font-family: "knockout_htf28-juniorfeatheRg",sans-serif;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 54px;
+  text-transform: uppercase; }
+
+.accordian {
+  clear: both; }
+
+h2.accordian_header {
+  font-size: 28px;
+  font-family: "knockout_htf28-juniorfeatheRg",sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0; }
+
+h2.accordian_header:after {
+  content: "+";
+  margin-left: 4px;
+  font-weight: bold; }
+
+h2.ui-state-active:after {
+  content: "-";
+  margin-left: 4px;
+  font-weight: bold; }
+
+.social_icons {
+  width: 100%;
+  float: left; }
+
+.social_icon_single {
+  width: 32.9999999%;
+  overflow: hidden;
+  float: left;
+  margin-bottom: 25px; }
+  .social_icon_single img, .social_icon_single span {
+    float: left; }
+  .social_icon_single span {
+    margin-top: 9px;
+    font-family: arial;
+    font-size: 16px; }
+  .social_icon_single img {
+    margin-right: 8px;
+    width:36px; }
+    
+    
+    
+    
+    
+    .social_icon_single:nth-child(3n + 3) {
+	   
+	    padding-left:2%;
+    }
+    
+    
+    .social_icon_single:nth-child(3n + 2) {
+	   
+	    padding-left:2%;
+    }
+    
+
+#accordion {
+  clear: both;
+  padding-top: 7px; }
+
+div.ui-accordion-content {
+  margin-bottom: 17px; }

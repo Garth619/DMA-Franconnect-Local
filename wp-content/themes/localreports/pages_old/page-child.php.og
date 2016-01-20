@@ -1,0 +1,346 @@
+<?php
+/**
+ * Template Name: Location Template
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Ten
+ * @since Twenty Ten 1.0
+ */
+
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<title><?php global $page, $paged; wp_title( '|', true, 'right' ); bloginfo( 'name' );
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		echo " | $site_description";
+		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() )
+		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
+
+	?></title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<style>
+    .floatingHeader {
+      position: fixed;
+      top: 0;
+      visibility: hidden;
+      
+    }
+	</style>
+<?php wp_head(); ?>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39197727-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  <script>
+    function UpdateTableHeaders() {
+       jQuery(".persist-area").each(function() {
+       
+           var el             = $(this),
+               offset         = el.offset(),
+               scrollTop      = $(window).scrollTop(),
+               floatingHeader = $(".floatingHeader", this)
+           
+           if ((scrollTop > offset.top) && (scrollTop < offset.top + el.height())) {
+               floatingHeader.css({
+                "visibility": "visible",
+                "padding-bottom" : "20px"
+                
+               });
+           } else {
+               floatingHeader.css({
+                "visibility": "hidden"
+               });      
+           };
+       });
+    }
+    
+    // DOM Ready      
+    jQuery(function() {
+    
+       var clonedHeaderRow;
+    
+       jQuery(".persist-area").each(function() {
+           clonedHeaderRow = $(".persist-header", this);
+           clonedHeaderRow
+             .before(clonedHeaderRow.clone())
+             .css("width", clonedHeaderRow.width())
+             .addClass("floatingHeader");
+             
+       });
+       
+       jQuery(window)
+        .scroll(UpdateTableHeaders)
+        .trigger("scroll");
+       
+    });
+  </script>
+</head>
+
+<body <?php body_class(); ?>>
+<div id="wrapper">
+	<div class="header">
+			<div class="inner_header">
+				<div class="logo_wrapper">
+				<img class="logo" src="<?php the_field('logo'); ?>"/>
+				</div><!-- logo wrapper -->
+				<div class="middle">
+					<span class="measure">How Do You MEasure Up?</span><br/>
+					<span class="location_title"><?php the_field('location_title'); ?></span>
+				</div><!-- middle -->
+				<div class="zucubator_wrapper">
+					<img class="zcubator" src="<?php bloginfo('template_directory'); ?>/images/lbb.jpg"/>
+				</div><!-- zcubator_wrapper -->
+			</div><!-- inner header -->
+	</div><!-- #header -->
+
+	<div id="main">
+		<div class="inner_main">
+			<div class="pin_wrapper">
+				<div class="single_pin_wrapper">
+					<div class="persist-area">
+					<div class="persist-header" style="background:#fff;">
+					<img class="pin" src="<?php bloginfo('template_directory'); ?>/images/get_found.png"/>
+					<div class="stars">
+						<?php if (get_field('get_found_rating') == 'one_star') : ?>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+						<?php elseif (get_field('get_found_rating') == 'two_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+      			<?php elseif (get_field('get_found_rating') == 'three_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<?php elseif (get_field('get_found_rating') == 'four_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<?php elseif (get_field('get_found_rating') == 'five_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+      			<?php endif; ?>
+      			</div><!-- stars -->
+					</div><!-- persist header -->
+					
+					<h3 class="observations">Observations:</h3>
+					<div class="notes">
+						<?php the_field('get_found_notes') ;?>
+					</div><!-- notes -->
+					<h3 class="observations">Recommendations:</h3>
+					<div class="notes">
+						<?php the_field('get_found_recommendations') ;?>
+					</div><!-- notes -->
+					<h3 class="observations">Sources:</h3>
+					<div class="notes">
+						<?php the_field('get_found_sources') ;?>
+					</div><!-- notes -->
+					</div><!-- persist area -->
+				</div><!-- single pin wrapper -->
+				<div class="single_pin_wrapper">
+					<div class="persist-area">
+					<div class="persist-header" style="background:#fff;">
+					<img class="pin" src="<?php bloginfo('template_directory'); ?>/images/get_social.png"/>
+					<div class="stars">
+						<?php if (get_field('get_social') == 'one_star') : ?>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+						<?php elseif (get_field('get_social') == 'two_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+      			<?php elseif (get_field('get_social') == 'three_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<?php elseif (get_field('get_social') == 'four_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<?php elseif (get_field('get_social') == 'five_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+      			<?php endif; ?>
+					
+					</div><!-- stars -->
+					</div><!-- persist header -->
+					<h3 class="observations">Observations:</h3>
+					<div class="notes">
+						<?php the_field('get_social_notes') ;?>
+					</div><!-- notes -->
+					<h3 class="observations">Recommendations:</h3>
+					<div class="notes">
+						<?php the_field('get_social_recommendations') ;?>
+					</div><!-- notes -->
+					<h3 class="observations">Sources:</h3>
+					<div class="notes">
+						<?php the_field('get_social_sources') ;?>
+					</div><!-- notes -->
+					</div><!-- persist area -->
+				</div><!-- single pin wrapper -->
+				<div class="single_pin_wrapper">
+					<div class="persist-area">
+					<div class="persist-header" style="background:#fff;">
+					<img class="pin" src="<?php bloginfo('template_directory'); ?>/images/get_reviews.png"/>
+					<div class="stars">
+						<?php if (get_field('get_reviews') == 'one_star') : ?>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+						<?php elseif (get_field('get_reviews') == 'two_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+      			<?php elseif (get_field('get_reviews') == 'three_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<?php elseif (get_field('get_reviews') == 'four_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<?php elseif (get_field('get_reviews') == 'five_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+      			<?php endif; ?>
+					
+					</div><!-- stars -->
+					</div><!-- persist header -->
+					<h3 class="observations">Observations:</h3>
+					<div class="notes">
+						<?php the_field('get_review_notes') ;?>
+					</div><!-- notes -->
+					<h3 class="observations">Recommendations:</h3>
+					<div class="notes">
+						<?php the_field('get_review_recommendations') ;?>
+					</div><!-- notes -->
+					<h3 class="observations">Sources:</h3>
+					<div class="notes">
+						<?php the_field('get_review_sources') ;?>
+					</div><!-- notes -->
+					</div><!-- persist area -->
+				</div><!-- single pin wrapper -->
+				
+				<div class="single_pin_wrapper">
+					<div class="persist-area">
+					<div class="persist-header" style="background:#fff;">
+					<img class="pin" src="<?php bloginfo('template_directory'); ?>/images/get_customers.png"/>
+					<div class="stars">
+						<?php if (get_field('get_customers') == 'one_star') : ?>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+						<?php elseif (get_field('get_customers') == 'two_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+      			<?php elseif (get_field('get_customers') == 'three_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<?php elseif (get_field('get_customers') == 'four_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-reg.png"/>
+							<?php elseif (get_field('get_customers') == 'five_stars') :?>
+      				<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+							<img src="<?php bloginfo('template_directory'); ?>/images/star-hover.png"/>
+      			<?php endif; ?>
+					</div><!-- stars -->
+					</div><!-- persist header -->
+					<h3 class="observations">Observations:</h3>
+					<div class="notes">
+						<?php the_field('get_customers_notes') ;?>
+					</div><!-- notes -->
+					<h3 class="observations">Recommendations:</h3>
+					<div class="notes">
+						<?php the_field('get_customers_recommendations') ;?>
+					</div><!-- notes -->
+					<h3 class="observations">Sources:</h3>
+					<div class="notes">
+						<?php the_field('get_customers_sources') ;?>
+					</div><!-- notes -->
+				</div><!-- single pin wrapper -->
+			</div><!-- pin_wrapper -->
+			
+				<?php if(get_field('screenshot')): ?>
+				<div class="screenshot" style="margin-top:300px;">
+					<h1>And the Winner Is...</h1>
+					<img src="<?php the_field('screenshot'); ?>"/>
+				</div><!-- screenshot -->
+				<?php endif; ?>
+			</div><!-- inner_main -->
+	</div><!-- #main -->
+	<div id="footer">
+		
+	</div><!-- #footer -->
+</div><!-- #wrapper -->
+<?php wp_footer(); ?>
+</body>
+</html>

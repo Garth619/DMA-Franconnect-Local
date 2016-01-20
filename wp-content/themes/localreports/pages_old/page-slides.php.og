@@ -1,0 +1,25 @@
+<?php
+/**
+ * Template Name: Location
+
+ */
+
+get_header(); ?>
+
+	
+<div class="main">
+	
+	
+
+<div class='panel_container'>
+  <div id="tabs-ajax-html"></div>
+  <div id="tabs-ajax-js"></div>
+ </div>	
+	
+	
+</div><!-- main -->
+
+
+
+
+<?php get_footer(); ?>
