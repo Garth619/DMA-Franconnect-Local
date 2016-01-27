@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name:  Archives Template */
+ * Template Name:  Location Template */
 
 
 
@@ -542,7 +542,28 @@ if( in_array('Active Rain', $selected) ) : ?>
   <?php if(get_field('get_found_notes')):?>
   <h2 class="green accordian_header">Observations</h2>
   <div class="accordian_content">
-	  <?php the_field('get_found_notes') ;?>
+	  <?php // the_field('get_found_notes') ;?>
+	  <?php if(get_field('get_found_notes')): ?>
+ 
+			<?php while(has_sub_field('get_found_notes')): ?>
+ 
+			<a href="<?php the_sub_field('observation_source_link');?>" target="_blank"><strong><?php the_sub_field('observation_source_title');?>:</strong></a>
+			<?php if (get_field('get_found_rating') == 'one_star') : ?>
+			
+			<?php endif;?>
+			
+			
+			<p>This is an answer</p>
+ 
+			<?php endwhile; ?>
+ 
+		<?php endif; ?>
+	  
+	  
+	  
+	  
+	  
+	  
  </div>
  <?php endif;?>
  
@@ -555,7 +576,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 	 <?php endif;?>
 	
 	<?php if(get_field('get_found_sources')):?>
-  <h2 class="green accordian_header">Sources</h2>
+  <h2 class="green accordian_header">Competitors</h2>
   <div class="accordian_content">
 	  <?php the_field('get_found_sources') ;?>
   </div>

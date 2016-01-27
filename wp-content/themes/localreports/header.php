@@ -49,8 +49,20 @@
 	<div class="wrapper">
 	
 	<div class="header">
+
+ 		
+ 		<div class="header_col_left">
+ 			<img  class="client_logo" src="<?php the_field('logo'); ?>"/>
+ 			<span class="header_content" style="float:left"><?php the_field('location_title'); ?> <!-- | Digital Marketing Assessment --></span>
+ 		</div>
 		
-		<span>Local Marketing Assessment | <?php the_field('location_title'); ?></span>
+
+<!--
+		<div class="header_col_right">
+			<img class="franconnect" src="<?php bloginfo('template_directory');?>/images/franconnect2.png"/>
+		
+		</div>
+-->
 		
 		
 	</div><!-- header -->

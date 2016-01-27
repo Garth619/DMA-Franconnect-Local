@@ -23,7 +23,7 @@
 	
 <div class="lma_intro lma_section">
 	
-	<h1 class="intro_header fade-in one">Local Marketing Assessments</h1>
+	<h1 class="intro_header fade-in one">Digital Marketing Assessments</h1>
 	
 	<div class="intro_pins_wrapper">
 		
