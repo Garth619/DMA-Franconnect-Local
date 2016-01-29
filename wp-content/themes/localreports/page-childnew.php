@@ -384,13 +384,34 @@ if( in_array('Google Plus', $selected) ) : ?>
   <h2 class="green accordian_header">Recommendations</h2>
   <div class="accordian_content">
 	  <?php the_field('get_found_recommendations') ;?>
+	  <p>Some verbiage to open the <span style="color:#74ad12">slideshow</span></p>
 	</div>
 	 <?php endif;?>
 	
-	<?php if(get_field('get_found_sources')):?>
+	<?php if(get_field('competitors_repeater')):?>
   <h2 class="green accordian_header">Competitors</h2>
   <div class="accordian_content">
-	  <?php the_field('get_found_sources') ;?>
+	  
+	  
+	  
+	 <?php if(get_field('competitors_repeater')): ?>
+ 
+
+ 
+	<?php while(has_sub_field('competitors_repeater')): ?>
+	
+		<p><?php the_sub_field('observation_source_title');?></p>
+ 
+   <?php endwhile; ?>
+ 
+
+ 
+<?php endif; ?>
+  
+  
+  
+  
+  
   </div>
    <?php endif;?>
   
