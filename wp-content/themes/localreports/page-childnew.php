@@ -261,7 +261,7 @@ get_header(); ?>
 
 <div class="report_wrapper">
 	
-	<h1 class="report_header green">Get Found</h1>
+	<h1 class="report_header green">SEO</h1>
 	<div class="social_icons">
 		
 		
@@ -421,7 +421,7 @@ if( in_array('Google Plus', $selected) ) : ?>
 </div><!-- review_stars --> 
 <div class="report_wrapper">
 	
-	<h1 class="report_header blue">Get Social</h1>
+	<h1 class="report_header blue">Social</h1>
 	<div class="social_icons">
 		
 		
@@ -769,7 +769,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 </div><!-- review_stars --> 
 <div class="report_wrapper">
 	
-	<h1 class="report_header orange">Get Reviews</h1>
+	<h1 class="report_header orange">Reputation</h1>
 	<div class="social_icons">
 		
 		<?php 
@@ -1005,7 +1005,30 @@ if( in_array('Active Rain', $selected) ) : ?>
   <?php if(get_field('get_review_notes')):?>
   <h2 class="orange accordian_header">Observations</h2>
   <div class="accordian_content">
-    <?php the_field('get_review_notes') ;?>
+   
+   
+   <?php if(get_field('reputation_observations')): ?>
+ 
+			<?php while(has_sub_field('reputation_observations')): ?>
+ 
+			<a style="display:inline-block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
+				<strong><?php the_sub_field('observation_source_title');?>:</strong></a>
+			
+			<?php 
+				
+				if(get_sub_field('observation_select_a_description') == "Answer One") {the_sub_field('answer'); };
+				if(get_sub_field('observation_select_a_description') == "Answer Two") {the_sub_field('answer_two'); };
+				if(get_sub_field('observation_select_a_description') == "Answer Three") {the_sub_field('answerthree'); 
+					
+				};?>
+			
+			
+			<?php endwhile; ?>
+ 
+		<?php endif; ?>
+   
+   
+   
   </div>
   <?php endif;?>
   
@@ -1013,16 +1036,12 @@ if( in_array('Active Rain', $selected) ) : ?>
   <h2 class="orange accordian_header">Recommendations</h2>
   <div class="accordian_content">
     <?php the_field('get_review_recommendations') ;?>
+	  <p>Some verbiage to open the <span>slideshow</span></p>
   </div>
   <?php endif;?>
   
   
-  <?php if(get_field('get_review_sources')):?>
-  <h2 class="orange accordian_header">Sources</h2>
-  <div class="accordian_content">
-    <?php the_field('get_review_sources') ;?>
-  </div>
-  <?php endif;?>
+  
   
 </div><!-- accordion -->
 	
@@ -1088,7 +1107,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 </div><!-- review_stars --> 
 <div class="report_wrapper">
 	
-	<h1 class="report_header red">Get Customers</h1>
+	<h1 class="report_header red">SEM</h1>
 
 		<div class="social_icons">
 		
@@ -1325,26 +1344,41 @@ if( in_array('Active Rain', $selected) ) : ?>
  <?php if(get_field('get_customers_notes')):?>
   <h2 class="red accordian_header">Observations</h2>
   <div class="accordian_content">
-    <?php the_field('get_customers_notes') ;?>
+    
+    
+    <?php if(get_field('sem_observations')): ?>
+ 
+			<?php while(has_sub_field('sem_observations')): ?>
+ 
+			<a style="display:inline-block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
+				<strong><?php the_sub_field('observation_source_title');?>:</strong></a>
+			
+			<?php 
+				
+				if(get_sub_field('observation_select_a_description') == "Answer One") {the_sub_field('answer'); };
+				if(get_sub_field('observation_select_a_description') == "Answer Two") {the_sub_field('answer_two'); };
+				if(get_sub_field('observation_select_a_description') == "Answer Three") {the_sub_field('answerthree'); 
+					
+				};?>
+			
+			
+			<?php endwhile; ?>
+ 
+		<?php endif; ?>
+  
+  
   </div>
    <?php endif;?>
   
   <?php if(get_field('get_customers_recommendations')):?>
   <h2 class="red accordian_header">Recommendations</h2>
   <div class="accordian_content">
-    <?php the_field('get_customers_recommendations') ;?>
+    <?php the_field('get_found_recommendations') ;?>
+	  <p>Some verbiage to open the <span>slideshow</span></p>
   </div>
   <?php endif;?>
   
- 
- <?php if(get_field('get_customers_sources')):?>
-  <h2 class="red accordian_header">Sources</h2>
-  <div class="accordian_content">
-    <?php the_field('get_customers_sources') ;?>
-  </div>
-  <?php endif;?>
-  
-</div><!-- accordion -->
+ </div><!-- accordion -->
 	
 	
 	
