@@ -30,13 +30,7 @@ get_header(); ?>
 		
 		<div class="intro_stars">
 			
-			
-			
-			
-			
-			
-			
-			<?php if (get_field('get_found_rating') == 'one_star') : ?>
+				<?php if (get_field('get_found_rating') == 'one_star') : ?>
 							<img src="<?php bloginfo('template_directory');?>/images/stars-new.png">
 							<img src="<?php bloginfo('template_directory');?>/images/grey-stars.png">
 							<img src="<?php bloginfo('template_directory');?>/images/grey-stars.png">
@@ -66,20 +60,10 @@ get_header(); ?>
 							<img src="<?php bloginfo('template_directory');?>/images/stars-new.png">
 							<img src="<?php bloginfo('template_directory');?>/images/stars-new.png">
 							<img src="<?php bloginfo('template_directory');?>/images/grey-stars.png">
-      			<?php endif; ?>
+      		<?php endif; ?>
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-
-		
-		
 		</div><!-- intro stars -->
 		
 		</div><!-- intro_single_wrapper -->
@@ -127,19 +111,7 @@ get_header(); ?>
 			
 			
 			
-			
-			
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		</div><!-- intro stars -->
+			</div><!-- intro stars -->
 		
 		</div><!-- intro_single_wrapper -->
 		
@@ -186,14 +158,7 @@ get_header(); ?>
 			
 			
 			
-			
-			
-
-		
-		
-		
-		
-		</div><!-- intro stars -->
+			</div><!-- intro stars -->
 		
 		</div><!-- intro_single_wrapper -->
 		
@@ -239,10 +204,7 @@ get_header(); ?>
       			<?php endif; ?>
 
 			
-			
-			
-
-		</div><!-- intro stars -->
+			</div><!-- intro stars -->
 		
 		</div><!-- intro_single_wrapper -->
 		
@@ -294,9 +256,6 @@ get_header(); ?>
 		
 		
 		
-		
-		
-
 	</div><!-- review_stars -->
 </div><!-- review_stars --> 
 
@@ -328,6 +287,11 @@ if( in_array('Google Plus', $selected) ) : ?>
   
   
   <?php if(get_field('get_found_notes')):?>
+  
+  
+  
+  
+  
   <h2 class="green accordian_header">Observations</h2>
   <div class="accordian_content">
 	  
@@ -335,48 +299,26 @@ if( in_array('Google Plus', $selected) ) : ?>
  
 			<?php while(has_sub_field('get_found_notes_new')): ?>
  
-			<a style="display:block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
+			<a style="display:inline-block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
 				<strong><?php the_sub_field('observation_source_title');?>:</strong></a>
 			
+			<?php 
+				
+				if(get_sub_field('observation_select_a_description') == "Answer One") {the_sub_field('answer'); };
+				if(get_sub_field('observation_select_a_description') == "Answer Two") {the_sub_field('answer_two'); };
+				if(get_sub_field('observation_select_a_description') == "Answer Three") {the_sub_field('answerthree'); 
+					
+				};?>
 			
 			
-			
-			<?php if(get_sub_field('observation_select_a_description') == "Answer One") :?>
-			
-			
-				<?php the_sub_field('answer'); ?>
-			
-			
-			<?php endif;?>
-			
-			
-			
-			<?php if(get_sub_field('observation_select_a_description') == "Answer Two") :?>
-			
-			
-				<?php the_sub_field('answer_two'); ?>
-			
-			
-			<?php endif;?>
-			
-			<?php if(get_sub_field('observation_select_a_description') == "Answer Three") :?>
-			
-			
-				<?php the_sub_field('answerthree'); ?>
-			
-			
-			<?php endif;?>
-
 			<?php endwhile; ?>
  
 		<?php endif; ?>
 	  
 	  
-	  
-	  
-	  
-	  
- </div>
+	</div><!-- accordian content -->
+ 
+ 
  <?php endif;?>
  
   
@@ -384,7 +326,7 @@ if( in_array('Google Plus', $selected) ) : ?>
   <h2 class="green accordian_header">Recommendations</h2>
   <div class="accordian_content">
 	  <?php the_field('get_found_recommendations') ;?>
-	  <p>Some verbiage to open the <span style="color:#74ad12">slideshow</span></p>
+	  <p>Some verbiage to open the <span>slideshow</span></p>
 	</div>
 	 <?php endif;?>
 	
@@ -711,19 +653,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 	
 <?php endif;?>
 
-		
-		
-		
-		
 
-
-		
-		
-		
-		
-	
-	
-	
 	
 	</div><!-- social_icons -->
 	
@@ -733,23 +663,44 @@ if( in_array('Active Rain', $selected) ) : ?>
   <?php if(get_field('get_social_notes')):?>
   <h2 class="blue accordian_header">Observations</h2>
   <div class="accordian_content">
-		<?php the_field('get_social_notes') ;?>
-  </div>
+		
+		
+		<?php if(get_field('social_observations')): ?>
+ 
+			<?php while(has_sub_field('social_observations')): ?>
+ 
+			<a style="display:inline-block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
+				<strong><?php the_sub_field('observation_source_title');?>:</strong></a>
+			
+			<?php 
+				
+				if(get_sub_field('observation_select_a_description') == "Answer One") {the_sub_field('answer'); };
+				if(get_sub_field('observation_select_a_description') == "Answer Two") {the_sub_field('answer_two'); };
+				if(get_sub_field('observation_select_a_description') == "Answer Three") {the_sub_field('answerthree'); 
+					
+				};?>
+			
+			
+			<?php endwhile; ?>
+ 
+		<?php endif; ?>
+ 
+ 
+ 
+ 
+  </div><!-- accordian_content -->
+  
   <?php endif;?>
   
   <?php if(get_field('get_social_recommendations')):?>
   <h2 class="blue accordian_header">Recommendations</h2>
   <div class="accordian_content">
-    <?php the_field('get_social_recommendations') ;?>
-  </div>
+	  <?php the_field('get_social_recommendations') ;?>
+	  <p>Some verbiage to open the <span>slideshow</span></p>
+	</div>
    <?php endif;?>
   
-  <?php if(get_field('get_social_sources')):?>
-  <h2 class="blue accordian_header">Sources</h2>
-  <div class="accordian_content">
-    <?php the_field('get_social_sources') ;?>
-  </div>
-  <?php endif;?>
+  
   
 </div><!-- accordion -->
 	
@@ -1046,11 +997,6 @@ if( in_array('Active Rain', $selected) ) : ?>
 <?php endif;?>
 
 
-
-	
-	
-	
-	
 	</div><!-- social_icons -->
 	
 	
@@ -1184,11 +1130,6 @@ if( in_array('Yelp', $selected) ) : ?>
 
 	
 <?php endif;?>
-
-
-
-
-
 
 
 <?php 
@@ -1377,36 +1318,11 @@ if( in_array('Active Rain', $selected) ) : ?>
 	
 <?php endif;?>
 
-
-
-	
-	
-	
-	
 	</div><!-- social_icons -->
 	
 	<div id="accordion4" class="red_accordian accordian">
   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   <?php if(get_field('get_customers_notes')):?>
+ <?php if(get_field('get_customers_notes')):?>
   <h2 class="red accordian_header">Observations</h2>
   <div class="accordian_content">
     <?php the_field('get_customers_notes') ;?>
@@ -1465,25 +1381,6 @@ get started
 </div><!-- get_started -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="mytabs">
 	
 	<ul class="mytabs_list">
@@ -1506,10 +1403,6 @@ get started
 
 <?php wp_footer(); ?>
 
-
-
-	
-	 
 </div><!-- main -->
 
 
