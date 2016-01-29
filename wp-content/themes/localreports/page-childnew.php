@@ -310,19 +310,6 @@ get_header(); ?>
 
 $selected = get_field('get_found_social_icons');
 
-if( in_array('Facebook', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/fb-icon.png"/><span><?php the_field('get_found_facebook');?></span>
-	</div><!-- social_icon_single -->
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
 if( in_array('Google Plus', $selected) ) : ?>
 	
 	
@@ -332,208 +319,9 @@ if( in_array('Google Plus', $selected) ) : ?>
 	
 <?php endif;?>
 
-<?php 
 
-$selected = get_field('get_found_social_icons');
 
-if( in_array('Yelp', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/yelp-icon.png"/><span><?php the_field('get_found_yelp');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Angies List', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/angies.png"/><span><?php the_field('get_found_angies_list');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Houzz', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/houzz.png"/><span><?php the_field('get_found_houzz');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Home Stars', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/home-stars.png"/><span><?php the_field('get_found_home_stars');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Home Advisor', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/home-advisors.png"/><span><?php the_field('get_found_home_advisors');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('BBB', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/bbb.png"/><span><?php the_field('get_found_bbb');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Aging Care', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/aging-cre.png"/><span><?php the_field('get_found_aging_care');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Care.com', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/care.png"/><span><?php the_field('get_found_carecom');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Caring.com', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/caring.png"/><span><?php the_field('get_found_caringcom');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Active Rain', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/active-rain.png"/><span><?php the_field('get_found_active_rain');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('CareInHomes', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/careinhomes.png"/><span><?php the_field('get_found_careinhomes');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Realtors', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/realtor.png"/><span><?php the_field('get_found_realtors');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Zillow', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/zillow.png"/><span><?php the_field('get_found_zillow');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-
-<?php 
-
-$selected = get_field('get_found_social_icons');
-
-if( in_array('Active Rain', $selected) ) : ?>
-	
-<div class="social_icon_single">
-			<img src="<?php bloginfo( 'template_directory' ); ?>/images/active-rain.png"/><span><?php the_field('get_found_active_rain');?></span>
-	</div><!-- social_icon_single -->
-
-	
-<?php endif;?>
-		
-			
-	
-	
-	
-	</div><!-- social_icons -->
+		</div><!-- social_icons -->
 	
 	
 	<div id="accordion" class="green_accordian accordian">
@@ -542,19 +330,43 @@ if( in_array('Active Rain', $selected) ) : ?>
   <?php if(get_field('get_found_notes')):?>
   <h2 class="green accordian_header">Observations</h2>
   <div class="accordian_content">
-	  <?php // the_field('get_found_notes') ;?>
-	  <?php if(get_field('get_found_notes')): ?>
+	  
+	  <?php if(get_field('get_found_notes_new')): ?>
  
-			<?php while(has_sub_field('get_found_notes')): ?>
+			<?php while(has_sub_field('get_found_notes_new')): ?>
  
-			<a href="<?php the_sub_field('observation_source_link');?>" target="_blank"><strong><?php the_sub_field('observation_source_title');?>:</strong></a>
-			<?php if (get_field('get_found_rating') == 'one_star') : ?>
+			<a style="display:block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
+				<strong><?php the_sub_field('observation_source_title');?>:</strong></a>
+			
+			
+			
+			
+			<?php if(get_sub_field('observation_select_a_description') == "Answer One") :?>
+			
+			
+				<?php the_sub_field('answer'); ?>
+			
 			
 			<?php endif;?>
 			
 			
-			<p>This is an answer</p>
- 
+			
+			<?php if(get_sub_field('observation_select_a_description') == "Answer Two") :?>
+			
+			
+				<?php the_sub_field('answer_two'); ?>
+			
+			
+			<?php endif;?>
+			
+			<?php if(get_sub_field('observation_select_a_description') == "Answer Three") :?>
+			
+			
+				<?php the_sub_field('answerthree'); ?>
+			
+			
+			<?php endif;?>
+
 			<?php endwhile; ?>
  
 		<?php endif; ?>

@@ -134,7 +134,7 @@ ul {
   .header_content {
 	  float:left;
 	  display: block;
-	  margin-top:27px;
+	  margin-top:31px;
 	   font-size: 28px;
   }
   
@@ -444,7 +444,7 @@ h2.accordian_header:after {
   margin-left: 4px;
   font-weight: bold; }
 
-h2.ui-state-active:after {
+h2.accordian_header.new_active:after {
   content: "-";
   margin-left: 4px;
   font-weight: bold; }

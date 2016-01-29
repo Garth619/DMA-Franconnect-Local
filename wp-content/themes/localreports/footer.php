@@ -6,11 +6,7 @@
 </div><!-- wrapper -->
 
 <?php wp_footer(); ?>
-<!--
-<script src="<?php bloginfo('template_directory');?>/jquery.hashchange.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory');?>/jquery.easytabs.min.js" type="text/javascript"></script>
--->
-<!-- <script src="<?php bloginfo('template_directory');?>/jquery-ui/jquery-ui.js"></script> -->
+
 <script type="text/javascript">
 
 
@@ -108,12 +104,13 @@ jQuery('.close').click(function() {
 });
 	
 	
-
+jQuery('.accordian_header:first-of-type').addClass('new_active');
 
 
 jQuery('.accordian_header').click(function(){
 	
 	jQuery(this).next('.accordian_content').slideToggle(200);
+	jQuery(this).toggleClass('new_active');
 	
 });
 
