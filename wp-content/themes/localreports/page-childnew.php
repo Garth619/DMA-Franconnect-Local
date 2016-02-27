@@ -16,9 +16,9 @@ get_header(); ?>
 	
 <div class="lma_intro lma_section">
 	
-	<img class="franconnect" src="<?php bloginfo('template_directory');?>/images/franconnect2.png"/>
-	<h1 class="intro_header fade-in one">How Do You Measure Up?</h1>
 	
+	<h1 class="intro_header fade-in one">How Do You Measure Up?</h1>
+	<img class="franconnect" src="<?php bloginfo('template_directory');?>/images/franconnect2.png"/>
 	<h2 class="sub_header">Digital Marketing Assessment</h2>
 	
 	<div class="intro_pins_wrapper">
@@ -217,7 +217,7 @@ get_header(); ?>
 
 <div class="review_stars_wrapper">
 	<span class="close">X</span>
-	<img src="<?php bloginfo( 'template_directory' ); ?>/images/map-03.png"/>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/1-02.png"/>
 	<div class="review_stars">
 		
 		
@@ -261,7 +261,7 @@ get_header(); ?>
 
 <div class="report_wrapper">
 	
-	<h1 class="report_header green">SEO</h1>
+	<h1 class="report_header green">Search Engine Optimization</h1>
 	<div class="social_icons">
 		
 		
@@ -379,7 +379,7 @@ if( in_array('Google Plus', $selected) ) : ?>
 
 <div class="review_stars_wrapper">
 	<span class="close"> X</span>
-	<img src="<?php bloginfo( 'template_directory' ); ?>/images/map-02.png"/>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/2-14.png"/>
 	<div class="review_stars">
 
 
@@ -727,7 +727,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 
 <div class="review_stars_wrapper">
 	<span class="close">X</span>
-	<img src="<?php bloginfo( 'template_directory' ); ?>/images/map-04.png"/>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/15-15.png"/>
 	<div class="review_stars">
 
 
@@ -1107,7 +1107,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 </div><!-- review_stars --> 
 <div class="report_wrapper">
 	
-	<h1 class="report_header red">SEM</h1>
+	<h1 class="report_header red">Search Engine Marketing</h1>
 
 		<div class="social_icons">
 		
@@ -1408,20 +1408,35 @@ get started
 	
 	
 	
-</div><!-- report_wrapper -->
+
 
 
 
 </div><!-- get_started -->
 
 
+<div class="seo_slideshow">
+	
+<div class=""><img data-lazy="<?php bloginfo('template_directory');?>/images/1.jpg"/></div>
+<div class=""><img data-lazy="<?php bloginfo('template_directory');?>/images/2.jpg"/></div>
+<div class=""><img data-lazy="<?php bloginfo('template_directory');?>/images/3.jpg"/></div>
+
+
+
+</div><!-- slick_slideshow -->
+
+
+
+</div><!-- lma wrapper -->
+
+
 <div class="mytabs">
 	
 	<ul class="mytabs_list">
-		<li class="green_bg get_found_tab lma_tab fade-in one"><img src="<?php bloginfo('template_directory');?>/images/v-get-found.png"/></li>
-		<li class="blue_bg get_social_tab lma_tab fade-in two"><img src="<?php bloginfo('template_directory');?>/images/v-get-social.png"/></li>
-		<li class="orange_bg get_reviews_tab lma_tab fade-in three"><img src="<?php bloginfo('template_directory');?>/images/v-get-reviews.png"/></li>
-		<li class="red_bg get_customers_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/v-get-customers.png"/></li>
+		<li class="green_bg get_found_tab lma_tab fade-in one"><img src="<?php bloginfo('template_directory');?>/images/seo.png"/></li>
+		<li class="blue_bg get_social_tab lma_tab fade-in two"><img src="<?php bloginfo('template_directory');?>/images/social-tab.png"/></li>
+		<li class="orange_bg get_reviews_tab lma_tab fade-in three"><img src="<?php bloginfo('template_directory');?>/images/reputation.png"/></li>
+		<li class="red_bg get_customers_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/sem.png"/></li>
 <!-- 		<li class="purple_bg get_started_tab lma_tab fade-in five"><img src="<?php bloginfo('template_directory');?>/images/v-get-started.png"/></li> -->
 	</ul>
 
@@ -1429,8 +1444,6 @@ get started
 
 
 
-
-</div><!-- lma wrapper -->
 
 
 

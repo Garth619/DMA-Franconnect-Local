@@ -3,7 +3,7 @@
 Plugin Name: Bottom Admin Bar
 Plugin URI: https://github.com/modshrink/bottom-admin-bar
 Description: While you are logged in to WordPress, this plugin will move to the bottom the admin bar that is displayed on the web site.
-Version: 1.2
+Version: 1.3
 Author: modshrink
 Author URI: http://www.modshrink.com/
 Text Domain: bottom-admin-bar
@@ -25,16 +25,24 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-
 $BottomAdminBar = new BottomAdminBar();
 
 class BottomAdminBar {
 	public function __construct() {
+		add_action( 'after_setup_theme', array( &$this, 'show_toolbar_check' ) );
 		add_action( 'plugins_loaded', array( &$this, 'myplugin_init' ) );
 		add_action( 'wp_enqueue_scripts', array( &$this, 'admin_bar_script_init' ), 11 );
 		add_action( 'get_header', array( &$this, 'remove_admin_bar_css' ) );
 		add_action( 'wp_head', array( &$this, 'my_admin_bar_bump_cb' ) );
 		add_action( 'wp_footer', array( &$this, 'keyboard_shortcut' ), 21 );
+	}
+
+	/**
+	 * Checking the 'Show Toolbar when viewing site' check box.
+	 */
+	public function show_toolbar_check() {
+		get_currentuserinfo();
+		if( 'true' !== get_user_meta( get_current_user_id(), 'show_admin_bar_front', 1 ) ) return;
 	}
 
 	/**

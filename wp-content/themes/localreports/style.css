@@ -18,7 +18,7 @@ a img, h2 {
   border: none; }
 
 .green {
-  color: #74ad12; }
+  color: #DE4D45; }
 
 .orange {
   color: #fa990f; }
@@ -36,7 +36,7 @@ a img, h2 {
   cursor: pointer; }
 
 .mytabs_list .green_bg.lma_active, .mytabs_list .green_bg:hover {
-  background: #74ad12; }
+  background: #DE4D45; }
 
 .mytabs_list .blue_bg.lma_active, .mytabs_list .blue_bg:hover {
   background: #21a7ac; }
@@ -51,7 +51,7 @@ a img, h2 {
   background: #5b269c; }
 
 .green_accordian a {
-  color: #74ad12;
+  color: #DE4D45;
   text-decoration: none; }
 .green_accordian a:hover {
   text-decoration: underline; }
@@ -100,7 +100,7 @@ ul {
 .wrapper {
   width: 100%;
 /*   padding: 8px 25px 25px; */
-	padding:25px;
+	padding: 15px 25px 25px;
   
   }
 
@@ -108,7 +108,7 @@ ul {
   width: 100%;
   margin-bottom: 9px;
   text-align: left;
-/*   padding-right:2%; */
+	overflow: hidden;
   font-family: "knockout_htf28-juniorfeatheRg",sans-serif;
   }
   
@@ -128,7 +128,7 @@ ul {
   }
   
   .header_col_left {
-	  margin-bottom:10px;
+/* 	  margin-bottom:10px; */
   }
   
   .header_content {
@@ -234,8 +234,17 @@ ul.tabs {
 .lma_section {
   overflow: hidden; }
 
-.lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section5 {
+.lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section5, .lma_section6 {
   display: none; }
+  
+
+
+
+.slick_slideshow img {
+	max-width:100%;
+	height:auto;
+}
+
 
 .lma_intro {
   text-align: center;
@@ -243,8 +252,10 @@ ul.tabs {
 
 h1.intro_header {
   font-family: "knockout_htf28-juniorfeatheRg",sans-serif;
+/*
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+*/
   text-align: center;
   margin-bottom: 35px;
   font-size: 43px;
@@ -366,7 +377,7 @@ img.single_pin:hover {
   text-align: center; }
   .review_stars_wrapper .review_stars {
     display: inline-block;
-    margin-top: 10px; }
+    }
     
     
   .review_map {
@@ -379,7 +390,7 @@ img.single_pin:hover {
   cursor: pointer;
   display: block;
   float: left;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   color:#818484; }
 
 .report_wrapper {
@@ -403,7 +414,7 @@ ul.mytabs_list {
     font-weight: bold;
     font-size: 15px; }
     ul.mytabs_list li img {
-      width: 9px;
+      width: 11px;
       display: block;
       margin: 0 auto; }
 

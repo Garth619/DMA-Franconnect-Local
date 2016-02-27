@@ -115,51 +115,40 @@ jQuery('.accordian_header').click(function(){
 });
 
 
-
-
-
-
-
-
-
-
-});
-
-
-
-
-
-
-
-</script>
-
-<script type="text/javascript">
-	
-	jQuery(document).ready(function(){
-  
-  
-  jQuery('#ajax-tab-container').easytabs({
-	 
-	  panelContext: jQuery(".panel_container")
-	  
-  });
-  
-  jQuery('.tab').click(function() {
+ jQuery('.tab').click(function() {
 	
 		jQuery("html, body").animate({scrollTop: 0});
 
 	});
-  
-  
-  
+
+
+
+
+
+
+  jQuery('.seo_slideshow').slick({
+   	lazyLoad: 'ondemand'
+  });
+
+
+
+
+
 
 
 
 
 
 });
-	
+
+
+
+
+
+
+
 </script>
+
 
 
 </body>
