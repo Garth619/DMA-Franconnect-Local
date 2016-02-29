@@ -326,7 +326,7 @@ if( in_array('Google Plus', $selected) ) : ?>
   <h2 class="green accordian_header">Recommendations</h2>
   <div class="accordian_content">
 	  <?php the_field('get_found_recommendations') ;?>
-	  <p>Some verbiage to open the <span>slideshow</span></p>
+	  <p>Some verbiage to open the <span class="open_slideshow">slideshow</span></p>
 	</div>
 	 <?php endif;?>
 	
@@ -1415,15 +1415,18 @@ get started
 </div><!-- get_started -->
 
 
+<div class="lma_section lma_section6">
+wtf
 <div class="seo_slideshow">
 	
-<div class=""><img data-lazy="<?php bloginfo('template_directory');?>/images/1.jpg"/></div>
+<div class=""><img src="<?php bloginfo('template_directory');?>/images/1.jpg"/></div>
 <div class=""><img data-lazy="<?php bloginfo('template_directory');?>/images/2.jpg"/></div>
 <div class=""><img data-lazy="<?php bloginfo('template_directory');?>/images/3.jpg"/></div>
 
+</div><!-- seo_slideshow -->
 
 
-</div><!-- slick_slideshow -->
+</div><!-- lma_section -->
 
 
 

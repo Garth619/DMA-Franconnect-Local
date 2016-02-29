@@ -74,9 +74,11 @@ a img, h2 {
 .red_accordian a:hover {
   text-decoration: underline; }
 
+/*
 img {
   max-width: 100%;
   height: auto; }
+*/
   
   
 
@@ -237,13 +239,22 @@ ul.tabs {
 .lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section5, .lma_section6 {
   display: none; }
   
+.slick-prev {
 
+ display: block !important;
+    left: 17px !important;
+    position: relative !important;
+    top: 45px !important;
+    z-index: 1000000 !important;
 
-
-.slick_slideshow img {
-	max-width:100%;
-	height:auto;
 }
+
+.slick-next {
+	display: block !important;
+  position: relative !important;
+   top: -45px !important;
+}
+
 
 
 .lma_intro {
@@ -377,6 +388,11 @@ img.single_pin:hover {
   text-align: center; }
   .review_stars_wrapper .review_stars {
     display: inline-block;
+    }
+    
+    .review_stars_wrapper img {
+	    max-width:100%;
+	    height:auto;
     }
     
     
