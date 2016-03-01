@@ -1417,6 +1417,7 @@ get started
 
 <div class="lma_section lma_section6">
 
+<!--
 <div class="seo_slideshow">
 	
 <div class=""><img  width="1021" src="<?php bloginfo('template_directory');?>/images/1.jpg"/></div>
@@ -1424,6 +1425,22 @@ get started
 <div class=""><img width="1021" data-lazy="<?php bloginfo('template_directory');?>/images/3.jpg"/></div>
 
 </div><!-- seo_slideshow -->
+
+
+
+
+
+
+
+<div id="mySlideshow" data-cycle-loader=true data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
+    <img class="myslides" src="<?php bloginfo('template_directory');?>/images/1.jpg">
+</div>
+
+
+<span id=prev><</span>
+<span id=next>></span>
+
+
 
 
 </div><!-- lma_section -->

@@ -34,12 +34,15 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/fonts/knockout/stylesheet.css" />
+<!--
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/slick/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/slick/slick/slick-theme.css"/>
+-->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php wp_head(); ?>
-<script type="text/javascript" src="<?php bloginfo('template_directory');?>/slick/slick/slick.min.js"></script>
-
+<!-- <script type="text/javascript" src="<?php bloginfo('template_directory');?>/slick/slick/slick.min.js"></script> -->
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/swipe.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
 
 
 </head>

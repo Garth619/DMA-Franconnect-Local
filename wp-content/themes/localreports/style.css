@@ -251,9 +251,51 @@ ul.tabs {
 }
 
 
+#prev, #next {
+	width:35px;
+	height:100%;
+	position: absolute;
+	top:0;
+	background:rgba(0, 0, 0, 0.02);
+	transition:all .2s ease;
+	z-index:1000;
+	display: block;
+	text-align: center;
+	color:#fff;
+
+}
+
+
+#prev {
+	left:0;
+	margin:15px 0 0px 15px;
+}
+
+#next {
+	right:0;
+	margin:15px 10px 0px 0px;
+}
+
+#prev:hover, #next:hover {
+	background:rgba(0, 0, 0, 0.1);
+	transition:all .2s ease;
+}
+
+
+
+
 .lma_intro {
   text-align: center;
   padding: 30px 3% 0 0; }
+  
+  
+.myslides {
+	width:1015px;
+	height:auto;
+}
+  
+  
+  
 
 h1.intro_header {
   font-family: "knockout_htf28-juniorfeatheRg",sans-serif;

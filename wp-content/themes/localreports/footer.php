@@ -136,11 +136,15 @@ jQuery('.accordian_header').click(function(){
 
 
 
+var slides = [
+    
+    "<img src='<?php bloginfo('template_directory');?>/images/2.jpg'>",
+    "<img src='<?php bloginfo('template_directory');?>/images/3.jpg'>"
+];
 
-
-  jQuery('.seo_slideshow').slick({
-   	lazyLoad: 'ondemand'
-  });
+jQuery('#mySlideshow').cycle({
+    progressive: slides
+});
 
 	
 
