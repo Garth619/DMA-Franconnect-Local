@@ -51,7 +51,7 @@ jQuery('.intro_single_wrapper4').click(function() {
 /* Slideshows */
 
 
-	jQuery('.open_slideshow').click(function() {
+	jQuery('.open_slideshow_1').click(function() {
 	
 		
 		jQuery('.lma_section1').hide(300);
@@ -65,7 +65,7 @@ jQuery('.intro_single_wrapper4').click(function() {
 jQuery('.get_found_tab, .intro_single_wrapper1').click(function() {
 	
 	jQuery('.lma_section1').show(300);
-	jQuery('.lma_intro, .lma_section2, .lma_section3, .lma_section4, .lma_section5').hide(300);
+	jQuery('.lma_intro, .lma_section2, .lma_section3, .lma_section4, .lma_section5, .lma_section6').hide(300);
 
 });
 
@@ -73,14 +73,14 @@ jQuery('.get_found_tab, .intro_single_wrapper1').click(function() {
 jQuery('.get_social_tab, .intro_single_wrapper2').click(function() {
 	
 	jQuery('.lma_section2').show(300);
-	jQuery('.lma_intro, .lma_section1, .lma_section3, .lma_section4, .lma_section5').hide(300);
+	jQuery('.lma_intro, .lma_section1, .lma_section3, .lma_section4, .lma_section5, .lma_section6').hide(300);
 	
 });
 
 jQuery('.get_reviews_tab, .intro_single_wrapper3').click(function() {
 	
 	jQuery('.lma_section3').show(300);
-	jQuery('.lma_intro, .lma_section1, .lma_section2, .lma_section4, .lma_section5').hide(300);
+	jQuery('.lma_intro, .lma_section1, .lma_section2, .lma_section4, .lma_section5, .lma_section6').hide(300);
 	
 });
 
@@ -88,14 +88,14 @@ jQuery('.get_reviews_tab, .intro_single_wrapper3').click(function() {
 jQuery('.get_customers_tab, .intro_single_wrapper4').click(function() {
 	
 	jQuery('.lma_section4').show(300);
-	jQuery('.lma_intro, .lma_section1, .lma_section2, .lma_section3, .lma_section5').hide(300);
+	jQuery('.lma_intro, .lma_section1, .lma_section2, .lma_section3, .lma_section5, .lma_section6').hide(300);
 	
 });
 
 jQuery('.get_started_tab').click(function() {
 	
 	jQuery('.lma_section5').show(300);
-	jQuery('.lma_intro, .lma_section1, .lma_section2, .lma_section3, .lma_section4').hide(300);
+	jQuery('.lma_intro, .lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section6').hide(300);
 	
 });
 
@@ -139,10 +139,7 @@ jQuery('.accordian_header').click(function(){
 
 
   jQuery('.seo_slideshow').slick({
-   	lazyLoad: 'ondemand',
-   	draggable: false
-   	
-	 	 
+   	lazyLoad: 'ondemand'
   });
 
 	

@@ -101,8 +101,9 @@ ul {
 
 .wrapper {
   width: 100%;
-/*   padding: 8px 25px 25px; */
 	padding: 15px 25px 25px;
+	max-width: 1111px;
+	margin:0 auto;
   
   }
 
@@ -168,6 +169,7 @@ ul {
   overflow: hidden;
   min-width: 650px;
   min-height: 585px;
+  
   }
 
 ul.tabs {
@@ -230,8 +232,11 @@ ul.tabs {
 /* LMA */
 .lma_wrapper {
   float: left;
-  width: 97%;
-  padding: 30px 0 0 49px; }
+  width: 98%;
+  padding: 15px 0 0 15px;
+  position: relative;
+  top:0;
+ }
 
 .lma_section {
   overflow: hidden; }
@@ -239,22 +244,11 @@ ul.tabs {
 .lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section5, .lma_section6 {
   display: none; }
   
-.slick-prev {
-
- display: block !important;
-    left: 17px !important;
-    position: relative !important;
-    top: 45px !important;
-    z-index: 1000000 !important;
-
+  
+  
+.slick-slider {
+    margin-bottom: 0px !important;
 }
-
-.slick-next {
-	display: block !important;
-  position: relative !important;
-   top: -45px !important;
-}
-
 
 
 .lma_intro {
@@ -414,18 +408,18 @@ img.single_pin:hover {
   padding: 40px 80px 20px 60px; }
 
 .mytabs {
-  width: 3%;
+  width: 2%;
   float: left; }
 
 ul.mytabs_list {
   list-style: none;
-  margin: 5px 0 0;
+  margin: 15px 0 0;
   dislay: none; }
   ul.mytabs_list li {
     color: #fff;
     padding: 10px 0px;
     background: #6e7070;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 15px; }
