@@ -26,7 +26,8 @@ get_header(); ?>
 		
 		<div class="intro_single_wrapper intro_single_wrapper1 fade-in one">
 		
-		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/intro-get-found.png"/>
+		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/new/map-01.png"/>
+<!--
 		
 		<div class="intro_stars">
 			
@@ -64,14 +65,16 @@ get_header(); ?>
 			
 			
 			
-		</div><!-- intro stars -->
+		</div>
+--><!-- intro stars -->
 		
 		</div><!-- intro_single_wrapper -->
 		
 		<div class="intro_single_wrapper intro_single_wrapper2 fade-in two">
 		
-		<img class="single_pin single_pin2" src="<?php bloginfo('template_directory');?>/images/intro-get-social.png"/>
+		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/new/map-02.png"/>
 		
+<!--
 		<div class="intro_stars">
 			
 			
@@ -111,14 +114,16 @@ get_header(); ?>
 			
 			
 			
-			</div><!-- intro stars -->
+			</div>
+--><!-- intro stars -->
 		
 		</div><!-- intro_single_wrapper -->
 		
 		<div class="intro_single_wrapper intro_single_wrapper3 fade-in three">
 		
-		<img class="single_pin single_pin3" src="<?php bloginfo('template_directory');?>/images/intro-get-reviews.png"/>
+		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/new/map-03.png"/>
 		
+<!--
 		<div class="intro_stars">
 			
 			
@@ -158,14 +163,16 @@ get_header(); ?>
 			
 			
 			
-			</div><!-- intro stars -->
+			</div>
+--><!-- intro stars -->
 		
 		</div><!-- intro_single_wrapper -->
 		
 		<div class="intro_single_wrapper intro_single_wrapper4 fade-in four">
 		
-		<img class="single_pin single_pin4" src="<?php bloginfo('template_directory');?>/images/intro-get-customers.png"/>
+		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/new/map-04.png"/>
 		
+<!--
 		<div class="intro_stars">
 			
 			
@@ -204,7 +211,8 @@ get_header(); ?>
       			<?php endif; ?>
 
 			
-			</div><!-- intro stars -->
+			</div>
+--><!-- intro stars -->
 		
 		</div><!-- intro_single_wrapper -->
 		

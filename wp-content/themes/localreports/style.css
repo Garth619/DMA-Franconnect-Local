@@ -312,19 +312,24 @@ h1.intro_header {
   padding: 0 25px; }
 
 .intro_pins_wrapper {
-  padding: 0 4% 0 0;
+  padding: 0 2%;
   margin-top: 60px; }
 
 .intro_single_wrapper {
   display: inline-block;
-  margin: 0 30px; }
+  margin: 0;
+  width:24%;
+  padding:0 2%;
+   }
 
 img.single_pin {
   position: relative;
   top: 0;
   transition: all .2s ease;
   cursor: pointer;
-  width:125px; }
+  max-width:100%;
+  height:auto;
+   }
 
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes myfadeIn {
