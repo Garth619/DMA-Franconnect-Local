@@ -1465,6 +1465,7 @@ get started
 		<li class="blue_bg get_social_tab lma_tab fade-in two"><img src="<?php bloginfo('template_directory');?>/images/social-tab.png"/></li>
 		<li class="orange_bg get_reviews_tab lma_tab fade-in three"><img src="<?php bloginfo('template_directory');?>/images/reputation.png"/></li>
 		<li class="red_bg get_customers_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/sem.png"/></li>
+		<li class="red_bg get_customers_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/new/get.png"/></li>
 <!-- 		<li class="purple_bg get_started_tab lma_tab fade-in five"><img src="<?php bloginfo('template_directory');?>/images/v-get-started.png"/></li> -->
 	</ul>
 

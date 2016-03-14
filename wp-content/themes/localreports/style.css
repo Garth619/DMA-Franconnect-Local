@@ -168,8 +168,8 @@ ul {
   -moz-box-shadow: 0px 0px 5px 0px #6e6e6e;
   box-shadow: 0px 0px 5px 0px #6e6e6e;
   overflow: hidden;
-  min-width: 650px;
-  min-height: 585px;
+
+  min-height: 490px;
   
   }
 
@@ -425,10 +425,11 @@ img.single_pin:hover {
   float: left; }
 
 .review_stars_wrapper {
-  width: 30%;
+  width: 27%;
   margin-top: 30px;
   text-align: center;
   margin-left: 5%;
+  padding: 0 1%;
    }
   .review_stars_wrapper .review_stars {
     display: inline-block;
@@ -454,7 +455,7 @@ img.single_pin:hover {
   color:#818484; }
 
 .report_wrapper {
-  width: 64%;
+  width: 68%;
   padding: 40px 6% 0; }
 
 .mytabs {
