@@ -228,7 +228,7 @@ get_header(); ?>
 	<img src="<?php bloginfo( 'template_directory' ); ?>/images/new/map-01.png"/>
 	<div class="review_stars">
 		
-		
+		<h2>SEO</h2>
 		
 		<?php if (get_field('get_found_rating') == 'one_star') : ?>
 							<img src="<?php bloginfo('template_directory');?>/images/stars-new.png">
@@ -339,7 +339,7 @@ if( in_array('Google Plus', $selected) ) : ?>
 	 <?php endif;?>
 	
 	<?php if(get_field('competitors_repeater')):?>
-  <h2 class="green accordian_header">Competitors</h2>
+  <h2 class="green accordian_header">Who's Winning</h2>
   <div class="accordian_content">
 	  
 	  
@@ -390,6 +390,7 @@ if( in_array('Google Plus', $selected) ) : ?>
 	<img src="<?php bloginfo( 'template_directory' ); ?>/images/new/map-02.png"/>
 	<div class="review_stars">
 
+<h2>SOCIAL</h2>
 
 <?php if (get_field('get_social') == 'one_star') : ?>
 							<img src="<?php bloginfo('template_directory');?>/images/stars-new.png">
@@ -738,7 +739,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 	<img src="<?php bloginfo( 'template_directory' ); ?>/images/new/map-03.png"/>
 	<div class="review_stars">
 
-
+<h2>REPUTATION</h2>
 
 <?php if (get_field('get_reviews') == 'one_star') : ?>
 							<img src="<?php bloginfo('template_directory');?>/images/stars-new.png">
@@ -1075,6 +1076,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 	<img src="<?php bloginfo( 'template_directory' ); ?>/images/new/map-04.png"/>
 	<div class="review_stars">
 		
+		<h2>SEM</h2>
 		
 		<?php if (get_field('get_customers') == 'one_star') : ?>
 							<img src="<?php bloginfo('template_directory');?>/images/stars-new.png">
@@ -1425,14 +1427,6 @@ get started
 
 <div class="lma_section lma_section6">
 
-<!--
-<div class="seo_slideshow">
-	
-<div class=""><img  width="1021" src="<?php bloginfo('template_directory');?>/images/1.jpg"/></div>
-<div class=""><img width="1021" data-lazy="<?php bloginfo('template_directory');?>/images/2.jpg"/></div>
-<div class=""><img width="1021" data-lazy="<?php bloginfo('template_directory');?>/images/3.jpg"/></div>
-
-</div><!-- seo_slideshow -->
 
 
 

@@ -169,7 +169,7 @@ ul {
   box-shadow: 0px 0px 5px 0px #6e6e6e;
   overflow: hidden;
 
-  min-height: 490px;
+    min-height: 492px;
   
   }
 
@@ -234,7 +234,7 @@ ul.tabs {
 .lma_wrapper {
   float: left;
   width: 98%;
-  padding: 15px 0 0 15px;
+  padding: 12px 0 0 12px;
   position: relative;
   top:0;
  }
@@ -245,11 +245,15 @@ ul.tabs {
 .lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section5, .lma_section6 {
   display: none; }
   
-  
+  .lma_section6 {
+	  margin-bottom:12px;
+  }
   
 .slick-slider {
     margin-bottom: 0px !important;
 }
+
+
 
 
 #prev, #next {
@@ -269,12 +273,12 @@ ul.tabs {
 
 #prev {
 	left:0;
-	margin:15px 0 0px 15px;
+	margin: 12px 0 0 12px;
 }
 
 #next {
 	right:0;
-	margin:15px 10px 0px 0px;
+	margin: 12px 12px 0 0px;
 }
 
 #prev:hover, #next:hover {
@@ -417,9 +421,14 @@ img.single_pin:hover {
     position: relative;
     top: 0px;
     transition: all .2s ease;
-    width:50px; }
+    width:40px; }
   .review_stars img:hover {
     top: 6px; }
+    
+    .review_stars h2 {
+	    padding:5px 0;
+	    font-size:22px;
+    }
 
 .review_stars_wrapper, .report_wrapper {
   float: left; }
@@ -456,7 +465,7 @@ img.single_pin:hover {
 
 .report_wrapper {
   width: 68%;
-  padding: 40px 6% 0; }
+  padding: 40px 6% 16px; }
 
 .mytabs {
   width: 2%;
@@ -464,7 +473,7 @@ img.single_pin:hover {
 
 ul.mytabs_list {
   list-style: none;
-  margin: 15px 0 0;
+  margin: 12px 0 0;
   dislay: none; }
   ul.mytabs_list li {
     color: #fff;

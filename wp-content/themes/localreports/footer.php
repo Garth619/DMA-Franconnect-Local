@@ -138,8 +138,8 @@ jQuery('.accordian_header').click(function(){
 
 var slides = [
     
-    "<img src='<?php bloginfo('template_directory');?>/images/2.jpg'>",
-    "<img src='<?php bloginfo('template_directory');?>/images/3.jpg'>"
+    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/2.jpg'>",
+    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/3.jpg'>"
 ];
 
 jQuery('#mySlideshow').cycle({
