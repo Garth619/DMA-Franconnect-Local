@@ -225,7 +225,7 @@ get_header(); ?>
 
 <div class="review_stars_wrapper">
 	<span class="close">X</span>
-	<img src="<?php bloginfo( 'template_directory' ); ?>/images/1-02.png"/>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/new/map-01.png"/>
 	<div class="review_stars">
 		
 		
@@ -387,7 +387,7 @@ if( in_array('Google Plus', $selected) ) : ?>
 
 <div class="review_stars_wrapper">
 	<span class="close"> X</span>
-	<img src="<?php bloginfo( 'template_directory' ); ?>/images/2-14.png"/>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/new/map-02.png"/>
 	<div class="review_stars">
 
 
@@ -735,7 +735,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 
 <div class="review_stars_wrapper">
 	<span class="close">X</span>
-	<img src="<?php bloginfo( 'template_directory' ); ?>/images/15-15.png"/>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/new/map-03.png"/>
 	<div class="review_stars">
 
 
@@ -1072,7 +1072,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 
 <div class="review_stars_wrapper">
 	<span class="close">X</span>
-	<img src="<?php bloginfo( 'template_directory' ); ?>/images/map-05.png"/>
+	<img src="<?php bloginfo( 'template_directory' ); ?>/images/new/map-04.png"/>
 	<div class="review_stars">
 		
 		
