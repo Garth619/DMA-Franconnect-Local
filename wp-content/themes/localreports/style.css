@@ -49,6 +49,11 @@ a img, h2 {
 
 .mytabs_list .purple_bg.lma_active, .mytabs_list .purple_bg:hover {
   background: #5b269c; }
+ 
+.mytabs_list .neworange_bg.lma_active, .mytabs_list .neworange_bg:hover {
+  background: #e9ae2e; }
+  
+  
 
 .green_accordian a {
   color: #DE4D45;
@@ -246,10 +251,10 @@ ul.tabs {
 .lma_section {
   overflow: hidden; }
 
-.lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section5, .lma_section6, .lma_section7, .lma_section8, .lma_section9 {
+.lma_section1, .lma_section2, .lma_section3, .lma_section4, .lma_section5, .lma_section6, .lma_section7, .lma_section8, .lma_section9, .lma_section10 {
   display: none; }
   
-  .lma_section6, .lma_section7, .lma_section8, .lma_section9 {
+  .lma_section6, .lma_section7, .lma_section8, .lma_section9, .lma_section10 {
 	  margin-bottom:12px;
   }
   
@@ -262,7 +267,7 @@ ul.tabs {
 
 
 
-#prev, #next, #prev2, #next2, #prev3, #next3, #prev4, #next4 {
+#prev, #next, #prev2, #next2, #prev3, #next3, #prev4, #next4, #prev5, #next5 {
 	width:35px;
 	height:100%;
 	position: absolute;
@@ -277,17 +282,17 @@ ul.tabs {
 }
 
 
-#prev, #prev2, #prev3, #prev4 {
+#prev, #prev2, #prev3, #prev4, #prev5, #prev5 {
 	left:0;
 	margin: 12px 0 0 12px;
 }
 
-#next, #next2, #next3, #next4 {
+#next, #next2, #next3, #next4, #next5 {
 	right:0;
 	margin: 12px 12px 0 0px;
 }
 
-#prev:hover, #next:hover, #prev2:hover, #next2:hover, #prev3:hover, #next3:hover, #prev4:hover, #next4:hover    {
+#prev:hover, #next:hover, #prev2:hover, #next2:hover, #prev3:hover, #next3:hover, #prev4:hover, #next4:hover, #prev5:hover, #next5:hover     {
 	background:rgba(0, 0, 0, 0.1);
 	transition:all .2s ease;
 	cursor: pointer;

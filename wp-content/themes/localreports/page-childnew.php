@@ -1495,6 +1495,20 @@ get started
 </div><!-- lma_section -->
 
 
+<div class="lma_section lma_section10">
+
+
+<div id="mySlideshow5" data-cycle-loader=true data-cycle-prev="#prev5" data-cycle-next="#next5" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
+    <img class="myslides" src="<?php bloginfo('template_directory');?>/images/1.jpg">
+</div>
+
+
+<span id=prev5><</span>
+<span id=next5>></span>
+
+</div><!-- lma_section -->
+
+
 </div><!-- lma wrapper -->
 
 
@@ -1505,7 +1519,7 @@ get started
 		<li class="blue_bg get_social_tab lma_tab fade-in two"><img src="<?php bloginfo('template_directory');?>/images/social-tab.png"/></li>
 		<li class="orange_bg get_reviews_tab lma_tab fade-in three"><img src="<?php bloginfo('template_directory');?>/images/reputation.png"/></li>
 		<li class="red_bg get_customers_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/sem.png"/></li>
-		<li class="red_bg get_customers_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/new/get.png"/></li>
+		<li class="neworange_bg get_started_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/new/get.png"/></li>
 <!-- 		<li class="purple_bg get_started_tab lma_tab fade-in five"><img src="<?php bloginfo('template_directory');?>/images/v-get-started.png"/></li> -->
 	</ul>
 
