@@ -16,9 +16,9 @@ get_header(); ?>
 	
 <div class="lma_intro lma_section">
 	
-	
+	<img class="franconnect" src="<?php bloginfo('template_directory');?>/images/new/new.png"/>
 	<h1 class="intro_header fade-in one">How Do You Measure Up?</h1>
-	<img class="franconnect" src="<?php bloginfo('template_directory');?>/images/franconnect2.png"/>
+	
 	<h2 class="sub_header">Digital Marketing Assessment</h2>
 	
 	<div class="intro_pins_wrapper">
@@ -27,6 +27,11 @@ get_header(); ?>
 		<div class="intro_single_wrapper intro_single_wrapper1 fade-in one">
 		
 		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/new/map-01.png"/>
+
+
+		<h2>SEO</h2>
+
+
 <!--
 		
 		<div class="intro_stars">
@@ -73,7 +78,7 @@ get_header(); ?>
 		<div class="intro_single_wrapper intro_single_wrapper2 fade-in two">
 		
 		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/new/map-02.png"/>
-		
+			<h2>SOCIAL</h2>
 <!--
 		<div class="intro_stars">
 			
@@ -122,7 +127,7 @@ get_header(); ?>
 		<div class="intro_single_wrapper intro_single_wrapper3 fade-in three">
 		
 		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/new/map-03.png"/>
-		
+		<h2>REPUTATION</h2>
 <!--
 		<div class="intro_stars">
 			
@@ -171,7 +176,7 @@ get_header(); ?>
 		<div class="intro_single_wrapper intro_single_wrapper4 fade-in four">
 		
 		<img class="single_pin single_pin1" src="<?php bloginfo('template_directory');?>/images/new/map-04.png"/>
-		
+			<h2>SEM</h2>
 <!--
 		<div class="intro_stars">
 			
@@ -334,7 +339,7 @@ if( in_array('Google Plus', $selected) ) : ?>
   <h2 class="green accordian_header">Recommendations</h2>
   <div class="accordian_content">
 	  <?php the_field('get_found_recommendations') ;?>
-	  <p>Some verbiage to open the <span class="open_slideshow_1">slideshow</span></p>
+	  <p>Some verbiage to open the <span class="open_slideshow_1 open_slideshow" style="color:#DE4D45">slideshow <img class="slideshow_icon" src="<?php bloginfo('template_directory');?>/images/new/slideshow-15.png"/></span></p>
 	</div>
 	 <?php endif;?>
 	
@@ -705,7 +710,7 @@ if( in_array('Active Rain', $selected) ) : ?>
   <h2 class="blue accordian_header">Recommendations</h2>
   <div class="accordian_content">
 	  <?php the_field('get_social_recommendations') ;?>
-	  <p>Some verbiage to open the <span>slideshow</span></p>
+	  <p>Some verbiage to open the <span class="open_slideshow_2 open_slideshow" style="color:#4a85a5">slideshow <img class="slideshow_icon" src="<?php bloginfo('template_directory');?>/images/new/slideshow-16.png"/></span></p>
 	</div>
    <?php endif;?>
   
@@ -1045,7 +1050,7 @@ if( in_array('Active Rain', $selected) ) : ?>
   <h2 class="orange accordian_header">Recommendations</h2>
   <div class="accordian_content">
     <?php the_field('get_review_recommendations') ;?>
-	  <p>Some verbiage to open the <span>slideshow</span></p>
+	  <p>Some verbiage to open the <span class="open_slideshow_3 open_slideshow" style="color:#08b8b7">slideshow <img class="slideshow_icon" src="<?php bloginfo('template_directory');?>/images/new/slideshow-17.png"/></span></p>
   </div>
   <?php endif;?>
   
@@ -1384,7 +1389,7 @@ if( in_array('Active Rain', $selected) ) : ?>
   <h2 class="red accordian_header">Recommendations</h2>
   <div class="accordian_content">
     <?php the_field('get_found_recommendations') ;?>
-	  <p>Some verbiage to open the <span>slideshow</span></p>
+	  <p>Some verbiage to open the <span class="open_slideshow_4 open_slideshow" style="color:#84b940">slideshow <img class="slideshow_icon" src="<?php bloginfo('template_directory');?>/images/new/slideshow-18.png"/></span></p>
   </div>
   <?php endif;?>
   
@@ -1405,6 +1410,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 
 
 
+<!--
 
 <div class="get_stared lma_section lma_section5">
 
@@ -1422,16 +1428,11 @@ get started
 
 
 
-</div><!-- get_started -->
+</div>
+--><!-- get_started -->
 
 
 <div class="lma_section lma_section6">
-
-
-
-
-
-
 
 
 <div id="mySlideshow" data-cycle-loader=true data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
@@ -1447,6 +1448,51 @@ get started
 
 </div><!-- lma_section -->
 
+
+
+
+
+<div class="lma_section lma_section7">
+
+
+<div id="mySlideshow2" data-cycle-loader=true data-cycle-prev="#prev2" data-cycle-next="#next2" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
+    <img class="myslides" src="<?php bloginfo('template_directory');?>/images/1.jpg">
+</div>
+
+
+<span id=prev2><</span>
+<span id=next2>></span>
+
+</div><!-- lma_section -->
+
+
+
+<div class="lma_section lma_section8">
+
+
+<div id="mySlideshow3" data-cycle-loader=true data-cycle-prev="#prev3" data-cycle-next="#next3" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
+    <img class="myslides" src="<?php bloginfo('template_directory');?>/images/1.jpg">
+</div>
+
+
+<span id=prev3><</span>
+<span id=next3>></span>
+
+</div><!-- lma_section -->
+
+
+<div class="lma_section lma_section9">
+
+
+<div id="mySlideshow4" data-cycle-loader=true data-cycle-prev="#prev4" data-cycle-next="#next4" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
+    <img class="myslides" src="<?php bloginfo('template_directory');?>/images/1.jpg">
+</div>
+
+
+<span id=prev4><</span>
+<span id=next4>></span>
+
+</div><!-- lma_section -->
 
 
 </div><!-- lma wrapper -->
