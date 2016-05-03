@@ -315,13 +315,7 @@ if( in_array('Google Plus', $selected) ) : ?>
 			<a style="display:inline-block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
 				<strong><?php the_sub_field('observation_source_title');?>:</strong></a>
 			
-			<?php 
-				
-				if(get_sub_field('observation_select_a_description') == "Answer One") {the_sub_field('answer'); };
-				if(get_sub_field('observation_select_a_description') == "Answer Two") {the_sub_field('answer_two'); };
-				if(get_sub_field('observation_select_a_description') == "Answer Three") {the_sub_field('answerthree'); 
-					
-				};?>
+			<?php the_sub_field('answer');?>
 			
 			
 			<?php endwhile; ?>
@@ -686,13 +680,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 			<a style="display:inline-block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
 				<strong><?php the_sub_field('observation_source_title');?>:</strong></a>
 			
-			<?php 
-				
-				if(get_sub_field('observation_select_a_description') == "Answer One") {the_sub_field('answer'); };
-				if(get_sub_field('observation_select_a_description') == "Answer Two") {the_sub_field('answer_two'); };
-				if(get_sub_field('observation_select_a_description') == "Answer Three") {the_sub_field('answerthree'); 
-					
-				};?>
+			<?php the_sub_field('answer');?>
 			
 			
 			<?php endwhile; ?>
@@ -1028,13 +1016,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 			<a style="display:inline-block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
 				<strong><?php the_sub_field('observation_source_title');?>:</strong></a>
 			
-			<?php 
-				
-				if(get_sub_field('observation_select_a_description') == "Answer One") {the_sub_field('answer'); };
-				if(get_sub_field('observation_select_a_description') == "Answer Two") {the_sub_field('answer_two'); };
-				if(get_sub_field('observation_select_a_description') == "Answer Three") {the_sub_field('answerthree'); 
-					
-				};?>
+			<?php the_sub_field('answer');?>
 			
 			
 			<?php endwhile; ?>
@@ -1368,13 +1350,7 @@ if( in_array('Active Rain', $selected) ) : ?>
 			<a style="display:inline-block;margin-bottom:5px;" href="<?php the_sub_field('observation_source_link');?>" target="_blank">
 				<strong><?php the_sub_field('observation_source_title');?>:</strong></a>
 			
-			<?php 
-				
-				if(get_sub_field('observation_select_a_description') == "Answer One") {the_sub_field('answer'); };
-				if(get_sub_field('observation_select_a_description') == "Answer Two") {the_sub_field('answer_two'); };
-				if(get_sub_field('observation_select_a_description') == "Answer Three") {the_sub_field('answerthree'); 
-					
-				};?>
+			<?php the_sub_field('answer');?>
 			
 			
 			<?php endwhile; ?>
@@ -1519,7 +1495,7 @@ get started
 		<li class="blue_bg get_social_tab lma_tab fade-in two"><img src="<?php bloginfo('template_directory');?>/images/social-tab.png"/></li>
 		<li class="orange_bg get_reviews_tab lma_tab fade-in three"><img src="<?php bloginfo('template_directory');?>/images/reputation.png"/></li>
 		<li class="red_bg get_customers_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/sem.png"/></li>
-		<li class="neworange_bg get_started_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/new/get.png"/></li>
+<!-- 		<li class="neworange_bg get_started_tab lma_tab fade-in four"><img src="<?php bloginfo('template_directory');?>/images/new/get.png"/></li> -->
 <!-- 		<li class="purple_bg get_started_tab lma_tab fade-in five"><img src="<?php bloginfo('template_directory');?>/images/v-get-started.png"/></li> -->
 	</ul>
 
