@@ -17,7 +17,7 @@ get_header(); ?>
 <div class="lma_intro lma_section">
 	
 	<img class="franconnect" src="<?php bloginfo('template_directory');?>/images/new/new.png"/>
-	<h1 class="intro_header fade-in one">How Do You Measure Up?</h1>
+<!-- 	<h1 class="intro_header fade-in one">How Do You Measure Up?</h1> -->
 	
 	<h2 class="sub_header">Digital Marketing Assessment</h2>
 	

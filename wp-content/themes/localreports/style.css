@@ -178,7 +178,7 @@ div.intro_single_wrapper h2 {
   -moz-box-shadow: 0px 0px 5px 0px #6e6e6e;
   box-shadow: 0px 0px 5px 0px #6e6e6e;
   overflow: hidden;
-	min-height: 537px;
+	min-height: 495px;
   
   }
 
@@ -326,7 +326,7 @@ h1.intro_header {
 
 .intro_pins_wrapper {
   padding: 0 2%;
-  margin-top: 70px; }
+  margin-top: 80px; }
 
 .intro_single_wrapper {
   display: inline-block;
@@ -521,6 +521,7 @@ h1.report_header {
   
   .open_slideshow {
 	  font-weight: bold;
+	  cursor:pointer;
   }
   
   .open_slideshow:hover {
