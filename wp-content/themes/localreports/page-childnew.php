@@ -17,7 +17,7 @@ get_header(); ?>
 <div class="lma_intro lma_section">
 	
 	<img class="franconnect" src="<?php bloginfo('template_directory');?>/images/new/new.png"/>
-<!-- 	<h1 class="intro_header fade-in one">How Do You Measure Up?</h1> -->
+
 	
 	<h2 class="sub_header">Digital Marketing Assessment</h2>
 	
@@ -1412,7 +1412,18 @@ get started
 
 
 <div id="mySlideshow" data-cycle-loader=true data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
-    <img class="myslides" src="<?php bloginfo('template_directory');?>/images/1.jpg">
+   
+   
+   
+   <?php if(get_field('seo_slideshow_section') == "GHS"):?>
+    
+   		<?php include("dma-slides/ghs/ghs-a.php"); ?>
+   
+   <?php endif;?>
+
+
+
+
 </div>
 
 
@@ -1432,7 +1443,17 @@ get started
 
 
 <div id="mySlideshow2" data-cycle-loader=true data-cycle-prev="#prev2" data-cycle-next="#next2" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
-    <img class="myslides" src="<?php bloginfo('template_directory');?>/images/1.jpg">
+    
+    
+    <?php if(get_field('seo_slideshow_section') == "GHS"):?>
+    
+   		<?php include("dma-slides/ghs/ghs-b.php"); ?>
+   
+   <?php endif;?>
+
+
+
+
 </div>
 
 
@@ -1447,7 +1468,15 @@ get started
 
 
 <div id="mySlideshow3" data-cycle-loader=true data-cycle-prev="#prev3" data-cycle-next="#next3" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
-    <img class="myslides" src="<?php bloginfo('template_directory');?>/images/1.jpg">
+    
+    
+    <?php if(get_field('seo_slideshow_section') == "GHS"):?>
+    
+   		<?php include("dma-slides/ghs/ghs-c.php"); ?>
+   
+   <?php endif;?>
+
+
 </div>
 
 
@@ -1461,7 +1490,14 @@ get started
 
 
 <div id="mySlideshow4" data-cycle-loader=true data-cycle-prev="#prev4" data-cycle-next="#next4" data-cycle-timeout="0" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz data-cycle-manual-fx="scrollHorz" data-cycle-loader=true>
-    <img class="myslides" src="<?php bloginfo('template_directory');?>/images/1.jpg">
+    
+    <?php if(get_field('seo_slideshow_section') == "GHS"):?>
+    
+   		<?php include("dma-slides/ghs/ghs-d.php"); ?>
+   
+   <?php endif;?>
+
+
 </div>
 
 

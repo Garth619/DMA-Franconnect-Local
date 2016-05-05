@@ -177,82 +177,16 @@ jQuery('.accordian_header').click(function(){
 	});
 
 
-
-
-var slides = [
-    
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/2.jpg'>",
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/3.jpg'>"
-];
-
-jQuery('#mySlideshow').cycle({
-    progressive: slides
 });
-
-
-
-
-var slides2 = [
-    
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/2.jpg'>",
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/3.jpg'>"
-];
-
-jQuery('#mySlideshow2').cycle({
-    progressive: slides
-});
-
-
-var slides3 = [
-    
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/2.jpg'>",
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/3.jpg'>"
-];
-
-jQuery('#mySlideshow3').cycle({
-    progressive: slides
-});
-
-
-var slides4 = [
-    
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/2.jpg'>",
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/3.jpg'>"
-];
-
-jQuery('#mySlideshow4').cycle({
-    progressive: slides
-});
-
-
-var slides5 = [
-    
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/2.jpg'>",
-    "<img class='myslides' src='<?php bloginfo('template_directory');?>/images/3.jpg'>"
-];
-
-jQuery('#mySlideshow5').cycle({
-    progressive: slides
-});
-
-
-
-
-
-
-
-
-
-
-});
-
-
-
-
-
-
 
 </script>
+
+ <?php if(get_field('seo_slideshow_section') == "GHS"):?>
+
+ 			<?php include("dma-slides/ghs/ghs-slides-ajax.php"); ?>
+
+ <?php endif;?>
+
 
 
 
